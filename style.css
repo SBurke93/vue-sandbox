@@ -1,0 +1,56 @@
+
+body {
+    font-family: monospace;
+    font-size: large;
+ 
+}
+
+
+#app {
+    max-width: 600px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #8af68a;
+    margin: 5px;
+    padding: 5px 20px 50px 20px;
+    -webkit-box-shadow: 15px 23px 12px -6px rgba(0,0,0,0.16);
+    -moz-box-shadow: 15px 23px 12px -6px rgba(0,0,0,0.16);
+    box-shadow: 15px 23px 12px -6px rgba(0,0,0,0.16);
+}
+
+.parent {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+    white-space: nowrap;
+    text-shadow: initial;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    background: #ff9999;
+    padding: 20px;
+  }
+
+ul li {
+    font-family: sans-serif;
+    font-style: italic;
+    background: #cce5ff;
+    margin: 5px;
+}
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 780px) {
+    /* For mobile phones: */
+    h2 {
+        font-size: 2.4rem;
+    }
+  }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Sandbox</title>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- linking external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="parent">
+    <div id="app" class="container">
+        <h2>{{ title }}</h2>
+        <ul>
+            <li>{{ items[1] }}</li>
+            <li>{{ items[0] }}</li>
+            <li>{{ items[2] }}</li>
+            <li>{{ items[3] }}</li>
+            <li>{{ items[4] }}</li>
+        </ul>
+    </div>
+</div>    
+   
+<script>
+    var data = {
+        items: ['Banana', 'Apple', 'Pear', 'Artichoke', 'Mango'],
+        title: 'My Shopping List'
+    };
+    new Vue({
+        el:'#app',
+        data: data
+    });
+</script>  
+</body>
+
+</html>
